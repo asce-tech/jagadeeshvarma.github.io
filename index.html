@@ -104,6 +104,16 @@
       <h2>Experience</h2>
     </header>
 
+    <!-- Research  -->
+    <div style="margin-top: 2rem;">
+      <h3 style="margin: 0;">Cybersecurity Researcher</h3>
+      <p style="margin: 0;"><strong>Cyber institute, Newyork, Ny</strong> | August 2025 – Present</p>
+      <p>
+		• Researched and analyzed emerging threat vectors (AI-driven malware, quantum-era cryptography risks, evolving adversary TTPs) to support threat intelligence reporting and incident response readiness. <br>  
+        • Produced threat briefings and security policy recommendations, enhancing organizational awareness of new attack methods and aligning findings with the MITRE ATT&CK framework. <br>
+        • Collaborated with cross-functional teams via Slack and Asana to streamline reporting workflows, ensuring timely delivery of intelligence updates to SOC and leadership teams. 
+      </p>
+    </div>
 
     <!-- Research Assistant -->
     <div style="margin-top: 2rem;">
@@ -390,154 +400,193 @@
 
 
 <!-- Certifications -->
+<section id="Certifications">
+  <h2 class="section-title">Certifications</h2>
+  <button class="scroll-btn scroll-left" onclick="scrollCerts(-1)">&#8678;</button>
+  <button class="scroll-btn scroll-right" onclick="scrollCerts(1)">&#8680;</button>
+
+  <div class="scroll-wrapper" id="certsContainer">
+
+    <!-- Security+ -->
+    <div class="cert-card">
+      <a href="images/Certifications/Security.png" target="_blank">
+        <img src="images/Certifications/Security.png" alt="CompTIA Security+" class="cert-img">
+      </a>
+      <h3>CompTIA Security+</h3>
+      <p>Core certification validating essential cybersecurity skills including risk management, threat analysis, and incident response.</p>
+    </div>
+
+    <!-- CEH -->
+    <div class="cert-card">
+      <a href="images/Certifications/CEH.jpg" target="_blank">
+        <img src="images/Certifications/CEH.jpg" alt="Certified Ethical Hacker" class="cert-img">
+      </a>
+      <h3>Certified Ethical Hacker (CEH)</h3>
+      <p>Hands-on certification in penetration testing, vulnerability assessment, and ethical hacking methodologies.</p>
+    </div>
+
+    <!-- Splunk -->
+    <div class="cert-card">
+      <a href="images/Certifications/SIEM Splunk.png" target="_blank">
+        <img src="images/Certifications/SIEM Splunk.png" alt="Splunk SIEM" class="cert-img">
+      </a>
+      <h3>Splunk SIEM</h3>
+      <p>Expertise in log analysis, alert configuration, and dashboard creation for SOC operations.</p>
+    </div>
+
+    <!-- Google Cybersecurity -->
+    <div class="cert-card">
+      <a href="images/Certifications/Google cybersecurity.png" target="_blank">
+        <img src="images/Certifications/Google cybersecurity.png" alt="Google Cybersecurity" class="cert-img">
+      </a>
+      <h3>Google Cybersecurity (Coursera)</h3>
+      <p>Professional certificate covering SOC operations, threat detection, and vulnerability assessment.</p>
+    </div>
+
+    <!-- IBM -->
+    <div class="cert-card">
+      <a href="images/Certifications/IBM Analyst.jpeg" target="_blank">
+        <img src="images/Certifications/IBM Analyst.jpeg" alt="IBM Cybersecurity Analyst" class="cert-img">
+      </a>
+      <h3>IBM Cybersecurity Analyst</h3>
+      <p>Training in SIEM, IDS/IPS, malware analysis, and enterprise-level security operations.</p>
+    </div>
+
+    <!-- Practical Ethical Hacking -->
+    <div class="cert-card">
+      <a href="images/Certifications/Practical Ethical Hacking.png" target="_blank">
+        <img src="images/Certifications/Practical Ethical Hacking.png" alt="Practical Ethical Hacking" class="cert-img">
+      </a>
+      <h3>Practical Ethical Hacking</h3>
+      <p>Hands-on penetration testing, exploitation techniques, and real-world attack simulations.</p>
+    </div>
+
+    <!-- Palo Alto -->
+    <div class="cert-card">
+      <a href="images/Certifications/1.png" target="_blank">
+        <img src="images/Certifications/1.png" alt="Palo Alto Cybersecurity" class="cert-img">
+      </a>
+      <h3>Palo Alto Cybersecurity</h3>
+      <p>Firewall administration, threat detection, and enterprise-level network security controls.</p>
+    </div>
+
+    <!-- Analyst Job Simulation -->
+    <div class="cert-card">
+      <a href="images/Certifications/Analyst_Job_simulation.png" target="_blank">
+        <img src="images/Certifications/Analyst_Job_simulation.png" alt="SOC Analyst Job Simulation" class="cert-img">
+      </a>
+      <h3>Analyst Job Simulation</h3>
+      <p>Virtual SOC analyst job simulation covering ticket triage, detection, and incident response.</p>
+    </div>
+
+    <!-- MTA -->
+    <div class="cert-card">
+      <a href="images/mta1.png" target="_blank">
+        <img src="images/mta1.png" alt="MTA Security Fundamentals" class="cert-img">
+      </a>
+      <h3>MTA: Security Fundamentals</h3>
+      <p>Microsoft certification in basic networking, cryptography, and system hardening.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Scroll Script -->
+<script>
+  function scrollCerts(direction) {
+    const container = document.getElementById("certsContainer");
+    const scrollAmount = 900;
+    container.scrollBy({
+      left: scrollAmount * direction,
+      behavior: 'smooth'
+    });
+  }
+</script>
+
 <style>
-	#Certifications {
-	  background: linear-gradient(135deg, #0f0f0f, #1a1a2e, #16213e);
-	  background-size: cover;
-	  padding: 80px 20px;
-	  box-shadow: inset 0 0 80px rgba(192, 192, 192, 0.05);
-	}
-  
-	#Certifications h2 {
-	  color: #c0c0c0;
-	  font-size: 2.8em;
-	  text-align: center;
-	  margin-bottom: 50px;
-	  text-shadow: 0 0 10px rgba(192, 192, 192, 0.2);
-	}
-  
-	.gallery-item {
-	  border: 2px solid #c0c0c0;
-	  border-radius: 6px;
-	  overflow: hidden;
-	  transition: box-shadow 0.3s ease, transform 0.3s ease;
-	}
-  
-	.gallery-item:hover {
-	  box-shadow: 0 8px 25px rgba(192, 192, 192, 0.2);
-	  transform: translateY(-5px);
-	}
-  
-	.gallery-item .content {
-	  background-color: rgba(15, 15, 15, 0.85);
-	  padding: 20px;
-	  text-align: center;
-	  color: #c0c0c0;
-	  border-top: 2px solid #c0c0c0;
-	}
-  
-	.gallery-item h3 {
-	  margin-top: 0;
-	  font-size: 1.4em;
-	  color: #c0c0c0;
-	}
-  
-	.image.fit img {
-	  width: 100%;
-	  display: block;
-	  border-bottom: 2px solid #c0c0c0;
-	  border-top: 2px solid #c0c0c0;
-	  transition: transform 0.3s ease, box-shadow 0.3s ease;
-	}
-  
-	.gallery-item:hover .image.fit img {
-	  transform: scale(1.02);
-	  box-shadow: 0 6px 18px rgba(192, 192, 192, 0.2);
-	}
-	
-  </style>
-<section id="Certifications" class="main style3 primary">
-	<div class="content">
-	  <header>
-		<h2>Certifications</h2>
-	  </header>
-  
-	  <div class="gallery">
-		<article class="gallery-item from-left">
-		  <a href="images/Certifications/CEH.jpg" target="_blank" class="image fit">
-			<img src="images/CEH.png" title="CEH" alt="" />
-		  </a>
-		  <div class="content">
-			<h3>CEH</h3>
-		  </div>
-		</article>
-  
-		<article class="gallery-item from-right">
-			<a href="images/Certifications/SIEM Splunk.png" target="_blank" class="image fit">
-			  <img src="images/splunk.jpeg" title="Splunk" alt="" />
-			</a>
-			<div class="content">
-			  <h3>Splunk</h3>
-			</div>
-		  </article>
-		  
-  
-		<article class="gallery-item from-left">
-			<a href="images/Certifications/Google cybersecurity.png" target="_blank" class="image fit">
-			<img src="images/coursera.png" title="Coursera Cybersecurity" alt="" />
-		  </a>
-		  <div class="content">
-			<h3>Coursera Cybersecurity</h3>
-		  </div>
-		</article>
+  /* Section Background */
+  #Certifications {
+    background: linear-gradient(135deg, #0f0f0f, #1a1a2e, #16213e);
+    padding: 80px 20px;
+    position: relative;
+    text-align: center;
+    box-shadow: inset 0 0 80px rgba(225, 229, 230, 0.05);
+  }
 
-		<article class="gallery-item from-right">
-			<a href="images/Certifications/IBM Analyst.jpeg" target="_blank" class="image fit">
-			<img src="images/IBM.png" title="IBM Cybersecurity Analyst" alt="" />
-		  </a>
-		  <div class="content">
-			<h3>IBM Cybersecurity Analyst</h3>
-		  </div>
-		</article>
+  #Certifications h2 {
+    color: #ffffff;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+  }
 
-		<article class="gallery-item from-left">
-			<a href="images/Certifications/Practical Ethical Hacking.png" target="_blank" class="image fit">
-			<img src="images/peh.jpeg" title="Practical Ethical Hacking" alt="" />
-		  </a>
-		  <div class="content">
-			<h3>Practical Ethical Hacking</h3>
-		  </div>
-		</article>
+  /* Scroll Wrapper */
+  .scroll-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 30px;
+    padding: 20px 0;
+  }
 
-		<article class="gallery-item from-right">
-			<a href="images/Certifications/1.png" data-lightbox="paloalto" data-title="Palo Alto Certification">
-			  <img src="images/paloalto.png" title="Palo Alto" alt="Palo Alto" />
-			</a>
+  .scroll-wrapper::-webkit-scrollbar {
+    display: none;
+  }
 
-			<a href="images/Certifications/2.png" data-lightbox="paloalto" style="display: none;"></a>
-			<a href="images/Certifications/3.png" data-lightbox="paloalto" style="display: none;"></a>
-			<a href="images/Certifications/4.png" data-lightbox="paloalto" style="display: none;"></a>
-		  
-			<div class="content">
-			  <h3>Palo Alto</h3>
-			</div>
-		  </article>
-		  
-		<article class="gallery-item from-left">
-			<a href="images/Certifications/Analyst_Job_simulation.png" target="_blank" class="image fit">
-			<img src="images/simulation.jpeg" title="Analyst Job Simulation" alt="" />
-		  </a>
-		  <div class="content">
-			<h3>Analyst Job Simulation</h3>
-		  </div>
-		</article>
+  /* Certification Cards */
+  .cert-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    padding: 40px 30px;
+    flex: 0 0 450px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
-		<article class="gallery-item from-right">
-			<a href="images/mta1.png" target="_blank" class="image fit">
-			  <img src="images/MTA.png" title="MTA: Security Fundamentals" alt="MTA: Security Fundamentals" />
-			</a>
-			<div class="content">
-			  <h3>MTA: Security Fundamentals</h3>
-			</div>
-		  </article>
-		  
-		
-	  </div>
-	</div>
-  </section>
-  
+  .cert-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(62, 63, 63, 0.3);
+  }
 
+  .cert-img {
+    max-width: 150px;
+    margin-bottom: 20px;
+  }
 
+  /* White text for certifications */
+  .cert-card h3,
+  .cert-card p {
+    color: #ffffff;
+  }
+
+  /* Scroll Buttons */
+  .scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(89, 90, 90, 0.2);
+    border: none;
+    color: white;
+    font-size: 2em;
+    padding: 15px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    transition: background 0.3s ease;
+  }
+
+  .scroll-btn:hover {
+    background: rgba(0, 255, 255, 0.137);
+  }
+
+  .scroll-left {
+    left: 20px;
+  }
+
+  .scroll-right {
+    right: 20px;
+  }
+</style>
 
 
 <!-- Resume Section -->
